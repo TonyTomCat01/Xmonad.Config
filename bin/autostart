@@ -1,0 +1,25 @@
+#!/usr/bin/bash
+
+xsetroot -cursor_name left_ptr
+
+feh --bg-scale /usr/share/backgrounds/wallpaper2.jpg
+
+killall -KILL picom eww sxhkd xss-lock dunst
+
+picom -b &
+
+sxhkd &
+
+xss-lock lock &
+
+dunst &
+
+/home/tonytomcat/.config/conky/Graffias/start.sh &
+
+eww open-many RamMod \
+         TimeMod \
+         CpuMod \
+         FsMod \
+         LaunchMod \
+         NetMod
+

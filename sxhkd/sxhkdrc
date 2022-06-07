@@ -1,0 +1,23 @@
+super + Escape
+    kill -USR1 $(pgrep sxhkd)
+
+super + Return
+    st
+
+super + s
+    ~/.xmonad/bin/autostart
+
+super + u
+    nautilus
+
+super + i
+    nvui --ext_multigrid
+
+super + f
+    google-chrome-stable
+
+super + p
+    rofi -theme ~/.config/rofi/launcher.rasi -show drun
+
+super + P
+    rofi -theme ~/.config/rofi/launcher.rasi -show window

@@ -1,0 +1,15 @@
+#!/usr/bin/luajit
+
+require("os")
+
+
+function sleep (a) 
+    local sec = tonumber(os.clock() + a); 
+    while (os.clock() < sec) do 
+    end 
+end
+
+while true do
+    print(os.date("   %H:%M:%S"))
+    sleep(1)
+end

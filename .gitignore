@@ -1,0 +1,6 @@
+.stack-work
+xmonad.hi
+xmonad.o
+xmonad/
+xmonad-contrib/
+build-x86_64
